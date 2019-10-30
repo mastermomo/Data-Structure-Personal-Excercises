@@ -1,0 +1,69 @@
+[class = SoccerGame, name = Ultimate Cup, place = River City Sportsplex, date/time = Sat Jul 28 10:00:04 EDT 2018, Weekend, audience = 1000] [teams = UR vs VCU, scores = 1 - 0, UR won, league = Professional] [project2.Weather@33909752]
+Events: 1
+Sport Events: 1
+Music Events: 0
+Art Events: 0
+Soccer Games: 1
+Basketball Games: 0
+Concerts: 0
+Orchestras: 0
+
+[class = BasketBallGame, name = NCAA, place = Siegel Center, date/time = Sun Jul 29 13:30:04 EDT 2018, Weekend, audience = 2000] [teams = UR vs VCU, scores = 30 - 40, VCU one, league = College]
+Events: 2
+Sport Events: 2
+Music Events: 0
+Art Events: 0
+Soccer Games: 1
+Basketball Games: 1
+Concerts: 0
+Orchestras: 0
+
+[class = Concert, name = Folk Festival, place = Browns Island, date/time = Wed Aug 01 13:00:04 EDT 2018, Weekday, audience = 900] [performers = [The Green Fields of America, ][type = Folk Music, project2.Weather@55f96302]
+Events: 3
+Sport Events: 2
+Music Events: 1
+Art Events: 0
+Soccer Games: 1
+Basketball Games: 1
+Concerts: 1
+Orchestras: 0
+
+[class = Orchestra, name = Dominion Energy Casual Fridays, place = Dominion Arts Center, date/time = Wed Aug 01 20:00:04 EDT 2018, Weekday, audience = 800] [performers = [Richmond Symphony]] [Casual Attire]
+Events: 4
+Sport Events: 2
+Music Events: 2
+Art Events: 0
+Soccer Games: 1
+Basketball Games: 1
+Concerts: 1
+Orchestras: 1
+
+[class = SoccerGame, name = Jefferson Cup, place = River City Sportsplex, date/time = Thu Aug 02 10:00:04 EDT 2018, Weekday, audience = 2000] [teams = UR vs VCU, scores = 1 - 1, UR won, league = College] [project2.Weather@42a57993]
+Events: 5
+Sport Events: 3
+Music Events: 2
+Art Events: 0
+Soccer Games: 2
+Basketball Games: 1
+Concerts: 1
+Orchestras: 1
+
+[class = Concert, name = Innsbrook After Hours, place = Innsbrook, date/time = Thu Aug 02 20:30:04 EDT 2018, Weekday, audience = 500] [performers = [Lee Brice][type = Jazz, project2.Weather@75b84c92]
+Events: 6
+Sport Events: 3
+Music Events: 3
+Art Events: 0
+Soccer Games: 2
+Basketball Games: 1
+Concerts: 2
+Orchestras: 1
+
+[class = ArtEvent, name = Abstract Art in Dialogue, place = Virginia Museum of Fine Arts, date/time = Fri Aug 03 10:30:04 EDT 2018, Weekday, audience = 500] [type = Abstract Art]
+Events: 7
+Sport Events: 3
+Music Events: 3
+Art Events: 1
+Soccer Games: 2
+Basketball Games: 1
+Concerts: 2
+Orchestras: 1

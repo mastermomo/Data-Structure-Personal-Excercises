@@ -16,6 +16,12 @@ import project2.SoccerGame;
 import project2.Concert;
 import project2.Orchestra;
 
+/**
+ * @author Mohammad Khan
+ * This class serves as a part of the 2nd project in my CSC 202 class. 
+ * It is a class that was provided by the instructor.
+ * It functions as a class that holds the main method for program execution.
+ */
 public class TestEvent {
     
     public static void main(String[] args) throws ParseException {
