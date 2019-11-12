@@ -11,10 +11,9 @@ import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
 
 /**
- * @author Mohammad Khan This class serves as a HW exercise for chapter 15 for
- * my CSC 202 class. The program takes in inputs for Investment Amount, Number
- * of Years, and Annual Interest Rate from the user. It then calculates the
- * Future value.
+ * @author Mohammad Khan This class serves as a HW exercise for chapter 16 for
+ * my CSC 202 class. The program takes in inputs for Annual interest rate, Number 
+ * of years, and Loan Amount. It then calculates the Monthly Payment and Total Payment.
  */
 public class LoanCalculator extends Application {
     // Creates textfield objects for the user to put in their inputs.
@@ -26,9 +25,14 @@ public class LoanCalculator extends Application {
     private TextField tfTotalPayment = new TextField();
     private Button btnCalculate = new Button("calculate");
 
+    /**
+     * Overrides the start method in order 
+     * to form the GUI for this program.
+     * @param primaryStage stages the the window and it's elements to the user.
+     */
     @Override
     public void start(Stage primaryStage) {
-        //create gui
+        // Forms the UI for the program.
         GridPane gridPane = new GridPane();
         gridPane.setHgap(5);
         gridPane.setVgap(5);
@@ -44,7 +48,8 @@ public class LoanCalculator extends Application {
         gridPane.add(tfTotalPayment, 1, 4);
         gridPane.add(btnCalculate, 1, 5);
 
-        //set properties for the ui
+        // Provides the positions that the UI elements
+        // will hold when the program runs.
         gridPane.setAlignment(Pos.CENTER);
         tfAnnualIntRate.setAlignment(Pos.BOTTOM_RIGHT);
         tfNumberOfYears.setAlignment(Pos.BOTTOM_RIGHT);
@@ -55,39 +60,40 @@ public class LoanCalculator extends Application {
         tfTotalPayment.setEditable(false);
         GridPane.setHalignment(btnCalculate, HPos.RIGHT);
 
-        //process the event using lamda event
+        // Calculates the Monthly and Total 
+        // payment when the "Calulate"
+        // button is pressed.
         btnCalculate.setOnAction(e -> {
             calculateLoanPayment();
         });
 
-        //create a scene and place it inthe stage
-        Scene scene = new Scene(gridPane, 400, 300);
-        primaryStage.setTitle("Loan calculator");
-        primaryStage.setScene(scene);
-        primaryStage.show();
+        Scene scene = new Scene(gridPane, 600, 600); // Sets the scene of the GUI to be displayed to the user.
+	primaryStage.setTitle("Loan Calculator"); // Sets the title of the window.
+	primaryStage.setScene(scene); // Sets the scene of the GUI to be displayed to the user.
+	primaryStage.show(); // Shows the user the GUI.
     }
 
     private void calculateLoanPayment() {
-        //get the values from the textFields
+        //Takes in the values from the textFields
         double interest = Double.parseDouble(tfAnnualIntRate.getText());
         int year = Integer.parseInt(tfNumberOfYears.getText());
         double loanAmount = Double.parseDouble(tfLoanAmount.getText());
 
-        //create a loan object
-        Loan loan = new Loan(interest, year, loanAmount);
-        //display monthly payment and total
+        
+        Loan loan = new Loan(interest, year, loanAmount); //create a Loan object from the made Loan class.
+        
+        // Shows the Monthly and Total payment to the user when the "Calculate button is pressed.
         tfMonthlyPayment.setText(String.format("$%.2f", loan.getMonthlyPayment()));
         tfTotalPayment.setText(String.format("$%.2f", loan.getTotalPayment()));
 
     }
 
     /**
-     * @param args the command line arguments
+     * Main method for program execution.
      */
     public static void main(String[] args) {
         // TODO code application logic here
         Application.launch(args);
     }
-
 }
 

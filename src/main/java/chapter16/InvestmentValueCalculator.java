@@ -15,7 +15,7 @@ import javafx.stage.Stage;
 
 /**
  * @author Mohammad Khan
- * This class serves as a HW exercise for chapter 15 for my CSC 202 class.
+ * This class serves as a HW exercise for chapter 16 for my CSC 202 class.
  * The program takes in inputs for Investment Amount, Number of Years, and 
  * Annual Interest Rate from the user. It then calculates the Future value.
  */
